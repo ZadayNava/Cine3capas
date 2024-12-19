@@ -41,12 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Asiento_DAL.cs" />
     <Compile Include="Clasificacion_DAL.cs" />
     <Compile Include="Configuracion.cs" />
     <Compile Include="Genero_DAL.cs" />
+    <Compile Include="Horario_DAL.cs" />
     <Compile Include="Metodos_Datos.cs" />
     <Compile Include="Pelicula_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sala_DAL.cs" />
+    <Compile Include="Sucursal_DAL.cs" />
     <Compile Include="Ticket_DAL.cs" />
   </ItemGroup>
   <ItemGroup>

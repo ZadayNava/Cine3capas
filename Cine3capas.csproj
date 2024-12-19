@@ -100,9 +100,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Catalogos\GeneroPelicula\FormularioGenero.aspx" />
+    <Content Include="Catalogos\GeneroPelicula\ListadoGeneroPelicula.aspx" />
     <Content Include="Catalogos\Pelicula\FormularioPeliculas.aspx" />
     <Content Include="Catalogos\Pelicula\ListadoPeliculas.aspx" />
-    <Content Include="Catalogos\Ticket\FormularioBoleto.aspx" />
+    <Content Include="Catalogos\Sala\ListadoSala.aspx" />
+    <Content Include="Catalogos\Ticket\FormularioTicket.aspx" />
+    <Content Include="Catalogos\Ticket\ListadoTicket.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -195,6 +199,20 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Catalogos\GeneroPelicula\FormularioGenero.aspx.cs">
+      <DependentUpon>FormularioGenero.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\GeneroPelicula\FormularioGenero.aspx.designer.cs">
+      <DependentUpon>FormularioGenero.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\GeneroPelicula\ListadoGeneroPelicula.aspx.cs">
+      <DependentUpon>ListadoGeneroPelicula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\GeneroPelicula\ListadoGeneroPelicula.aspx.designer.cs">
+      <DependentUpon>ListadoGeneroPelicula.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Catalogos\Pelicula\FormularioPeliculas.aspx.cs">
       <DependentUpon>FormularioPeliculas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -209,12 +227,26 @@
     <Compile Include="Catalogos\Pelicula\ListadoPeliculas.aspx.designer.cs">
       <DependentUpon>ListadoPeliculas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Catalogos\Ticket\FormularioBoleto.aspx.cs">
-      <DependentUpon>FormularioBoleto.aspx</DependentUpon>
+    <Compile Include="Catalogos\Sala\ListadoSala.aspx.cs">
+      <DependentUpon>ListadoSala.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Catalogos\Ticket\FormularioBoleto.aspx.designer.cs">
-      <DependentUpon>FormularioBoleto.aspx</DependentUpon>
+    <Compile Include="Catalogos\Sala\ListadoSala.aspx.designer.cs">
+      <DependentUpon>ListadoSala.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Ticket\FormularioTicket.aspx.cs">
+      <DependentUpon>FormularioTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Ticket\FormularioTicket.aspx.designer.cs">
+      <DependentUpon>FormularioTicket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Ticket\ListadoTicket.aspx.cs">
+      <DependentUpon>ListadoTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Ticket\ListadoTicket.aspx.designer.cs">
+      <DependentUpon>ListadoTicket.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -280,6 +312,9 @@
       <Project>{bbf8696a-cbab-44e7-952f-8283e56cd9c8}</Project>
       <Name>VO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

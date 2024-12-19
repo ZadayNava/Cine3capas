@@ -8,20 +8,13 @@ using VO;
 
 namespace BLL
 {
-    public class Genero_BLL
+    public class Sala_BLL
     {
-        //Create
-        public static string Insert_Genero(GeneroPelicula_VO genero)
-        {
-            return Genero_DAL.Insert_Genero(genero);
-        }
-
         //Read
-        public static List<GeneroPelicula_VO> GetGenero(params object[] parametros)
+        public static List<Sala_VO> GetSala(params object[] parametros)
         {
-            return Genero_DAL.GetGenero(parametros);
+            return Sala_DAL.GetSala(parametros);
         }
-
         //Delete
         public static string Delete_Genero(int id)
         {

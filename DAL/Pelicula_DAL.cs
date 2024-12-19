@@ -19,9 +19,9 @@ namespace DAL
             try
             {
                 respuesta = Metodos_Datos.execute_nonQuery("SP_InsertarPelicula",
-                                               "@Clasificacion_Id", pelicula.Clasificacion_Id,
+                                               "@Clasificacion_Id", pelicula.ClasifiicacionPelicula.Id_Clasificacion1,
                                                "@NombrePelicula", pelicula.Nombre_Pelicula,
-                                               "@Genero_Id", pelicula.Genero_Id
+                                               "@Genero_Id", pelicula.GeneroPelicula.Id_Genero
                                                         );
                 if (respuesta != 0)
                 {
@@ -92,9 +92,9 @@ namespace DAL
             try
             {
                 respuesta = Metodos_Datos.execute_nonQuery("SP_UpdatePelciula",
-                                               "@Clasificacion_id", Pelicula.Clasificacion_Id,
+                                               "@Clasificacion_id", Pelicula.ClasifiicacionPelicula.Id_Clasificacion1,
                                                "@NombrePelicula", Pelicula.Nombre_Pelicula,
-                                               "@Genero_id", Pelicula.Genero_Id,
+                                               "@Genero_id", Pelicula.GeneroPelicula.Id_Genero,
                                                "@Id", Pelicula.Id_Pelicula
                     );
 

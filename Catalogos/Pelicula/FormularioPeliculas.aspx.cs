@@ -27,8 +27,8 @@ namespace Cine3capas.Catalogos.Pelicula
                         //Relleno el formulario
                         Titulo.Text = "Actualizar Pelicula";
                         subTitulo.Text = "Pelicula #" + id_pelicula;
-                        ddlGenero.SelectedValue = _peli.Genero_Id.ToString();
-                        ddlClasificacion.SelectedValue = _peli.Clasificacion_Id.ToString();
+                        ddlGenero.SelectedValue = _peli.GeneroPelicula.Nombre_Genero.ToString();
+                        ddlClasificacion.SelectedValue = _peli.ClasifiicacionPelicula.Tipo_Clasificacion1.ToString();
                         txtNombre.Text = _peli.Nombre_Pelicula.ToString();
                     }
                     else
@@ -90,8 +90,8 @@ namespace Cine3capas.Catalogos.Pelicula
             {
                 //asigno mis valores del formulario al objeto
                 _peli.Nombre_Pelicula = txtNombre.Text;
-                _peli.Genero_Id = int.Parse(ddlGenero.SelectedValue);
-                _peli.Clasificacion_Id = int.Parse(ddlClasificacion.SelectedValue);
+                _peli.GeneroPelicula.Id_Genero = int.Parse(ddlGenero.SelectedValue);
+                _peli.ClasifiicacionPelicula.Id_Clasificacion1 = int.Parse(ddlClasificacion.SelectedValue);
                 //valido si voy a insertar o a actualizar
                 if (Request.QueryString["Id"] != null)
                 {

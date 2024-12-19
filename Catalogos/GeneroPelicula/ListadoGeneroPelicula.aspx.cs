@@ -7,9 +7,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Cine3capas.Catalogos.Pelicula
+namespace Cine3capas.Catalogos.GeneroPelicula
 {
-    public partial class ListadoPeliculas : System.Web.UI.Page
+    public partial class ListadoGeneroPelicula : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -22,22 +22,23 @@ namespace Cine3capas.Catalogos.Pelicula
         public void cargarGrid()
         {
             //cargar la informacion desde la BLL al GV
-            GVPeliculas.DataSource = Pelicula_BLL.GetPelicula();
+            GVGeneroPelicula.DataSource = Genero_BLL.GetGenero();
             //mostramos los resultados resultados renderizado la informacion
-            GVPeliculas.DataBind();
+            GVGeneroPelicula.DataBind();
         }
 
         protected void Insertar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("FormularioPeliculas.aspx");
+            Response.Redirect("FormularioGenero.aspx");
         }
 
-        protected void GVPeliculas_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        protected void GVGeneroPelicula_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
+
             //recuero el id del renglon afectado 
-            int id_pelicula = int.Parse(GVPeliculas.DataKeys[e.RowIndex].Values["Id_Pelicula"].ToString());
+            int id_Genero = int.Parse(GVGeneroPelicula.DataKeys[e.RowIndex].Values["Id_Genero"].ToString());
             //invoco mi metodo para eliminar mi camion
-            string respuesta = Pelicula_BLL.Delete_Pelicula(id_pelicula);
+            string respuesta = Genero_BLL.Delete_Genero(id_Genero);
             //preparamos el sweet alert
             string titulo, msg, tipo;
             if (respuesta.ToUpper().Contains("ERROR"))
@@ -59,7 +60,7 @@ namespace Cine3capas.Catalogos.Pelicula
             cargarGrid();
         }
 
-        protected void GVPeliculas_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void GVGeneroPelicula_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             //defino si el comando (el clic que se detecta) tiene la propiedad "select"
             if (e.CommandName == "Select")
@@ -67,21 +68,10 @@ namespace Cine3capas.Catalogos.Pelicula
                 //recupero el indice en funcin de aquel elemento que haya detonado el evento
                 int varIndex = int.Parse(e.CommandArgument.ToString());
                 //recupero el ID en funcion del indice que recuperamos anteriormente, se encuentra en ListadoCamiones.aspx.cs
-                string id = GVPeliculas.DataKeys[varIndex].Values["Id_Pelicula"].ToString();
+                string id = GVGeneroPelicula.DataKeys[varIndex].Values["Id_Genero"].ToString();
                 //redirecciono al formulario de edicion pasando como parametro el ID
-                Response.Redirect($"FormularioPeliculas.aspx?Id={id}");
-            }
-
-            if (e.CommandName == "Comprar")
-            {
-                //recupero el indice en funcin de aquel elemento que haya detonado el evento
-                int varIndex = int.Parse(e.CommandArgument.ToString());
-                //recupero el ID en funcion del indice que recuperamos anteriormente, se encuentra en ListadoCamiones.aspx.cs
-                string id = GVPeliculas.DataKeys[varIndex].Values["Id_Pelicula"].ToString();
-                //redirecciono al formulario de edicion pasando como parametro el ID
-                Response.Redirect($"../Ticket/FormularioTicket.aspx?Id_Peli={id}");
+                Response.Redirect($"FormularioGenero.aspx?Id={id}");
             }
         }
-
     }
 }

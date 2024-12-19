@@ -24,7 +24,7 @@ namespace VO
 
         public Sala_VO(DataRow dr)
         {
-            _Id_Sala = int.Parse(dr["   Id_Sala"].ToString());
+            _Id_Sala = int.Parse(dr["Id_Sala"].ToString());
             _TipoSala = dr["TipoSala"].ToString();
             _NomSala = dr["NomSala"].ToString();
             _Asientos_ID = int.Parse(dr["Asientos_ID"].ToString());

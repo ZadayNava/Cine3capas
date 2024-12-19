@@ -8,12 +8,12 @@ using VO;
 
 namespace BLL
 {
-    public class Clasificacion_BLL
+    public class Sucursal_BLL
     {
         //Read
-        public static List<Clasificacion_VO> GetClasificacion(params object[] parametros)
+        public static List<Sucursal_VO> GetSucursal(params object[] parametros)
         {
-            return Clasificacion_DAL.GetClasififcacion(parametros);
+            return Sucursal_DAL.GetSucursal(parametros);
         }
     }
 }

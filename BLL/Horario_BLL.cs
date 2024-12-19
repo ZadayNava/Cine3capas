@@ -8,26 +8,14 @@ using VO;
 
 namespace BLL
 {
-    public class Ticket_BLL
+    public class Horario_BLL
     {
-
-        //Create
-        public static string Insert_Ticket(Ticket_VO ticket)
-        {
-            return Ticket_DAL.Insert_Ticket(ticket);
-        }
-
         //Read
-        public static List<Ticket_VO> GetTicket(params object[] parametros)
+        public static List<Hora_VO> GetHorario(params object[] parametros)
         {
-            return Ticket_DAL.GetTicket(parametros);
+            return Horario_DAL.GetHorario(parametros);
         }
 
-        //ReadxID
-        public static Ticket_VO GetTicketxID(int id)
-        {
-            return Ticket_DAL.GetTicketxID(id);
-        }
 
         //Update
         public static string Update_Ticket(Ticket_VO ticket)
