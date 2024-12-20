@@ -104,6 +104,7 @@
     <Content Include="Catalogos\GeneroPelicula\ListadoGeneroPelicula.aspx" />
     <Content Include="Catalogos\Pelicula\FormularioPeliculas.aspx" />
     <Content Include="Catalogos\Pelicula\ListadoPeliculas.aspx" />
+    <Content Include="Catalogos\Sala\FormularioSala.aspx" />
     <Content Include="Catalogos\Sala\ListadoSala.aspx" />
     <Content Include="Catalogos\Ticket\FormularioTicket.aspx" />
     <Content Include="Catalogos\Ticket\ListadoTicket.aspx" />
@@ -156,6 +157,8 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="WS\GeneroService.asmx" />
+    <Content Include="WS\SalaService.asmx" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -227,6 +230,13 @@
     <Compile Include="Catalogos\Pelicula\ListadoPeliculas.aspx.designer.cs">
       <DependentUpon>ListadoPeliculas.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Catalogos\Sala\FormularioSala.aspx.cs">
+      <DependentUpon>FormularioSala.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Sala\FormularioSala.aspx.designer.cs">
+      <DependentUpon>FormularioSala.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Catalogos\Sala\ListadoSala.aspx.cs">
       <DependentUpon>ListadoSala.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -287,6 +297,14 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WS\GeneroService.asmx.cs">
+      <DependentUpon>GeneroService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WS\SalaService.asmx.cs">
+      <DependentUpon>SalaService.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

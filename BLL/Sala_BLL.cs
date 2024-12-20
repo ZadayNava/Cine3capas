@@ -16,9 +16,16 @@ namespace BLL
             return Sala_DAL.GetSala(parametros);
         }
         //Delete
-        public static string Delete_Genero(int id)
+        public static string Delete_Sala(int id)
         {
-            return Genero_DAL.DeleteGenero(id);
+            return Sala_DAL.DeleteSala(id);
         }
+
+        //Create
+        public static string Insert_Sala(Sala_VO sala)
+        {
+            return Sala_DAL.Insert_Sala(sala);
+        }
+
     }
 }

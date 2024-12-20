@@ -22,7 +22,7 @@
                 <asp:BoundField DataField="Sala.NomSala" HeaderText="Sala" ItemStyle-Width="50px"/>
                 <asp:BoundField DataField="Asiento.Fila" HeaderText="Fila" ItemStyle-Width="50px"/>
                 <asp:BoundField DataField="Asiento.NumAsientos" HeaderText="NumAsientos" ItemStyle-Width="50px"/>
-                <asp:ButtonField ButtonType="Button" CommandName="Select" HeaderText="Modificar" Text="Editar" ControlStyle-CssClass="btn btn-primary btn-xs" ItemStyle-Width="50px"/>
+                <%--<asp:ButtonField ButtonType="Button" CommandName="Select" HeaderText="Modificar" Text="Editar" ControlStyle-CssClass="btn btn-primary btn-xs" ItemStyle-Width="50px"/>--%>
                 <asp:CommandField ButtonType="Button" HeaderText="Eliminar" ShowDeleteButton="true" ShowHeader="true" ControlStyle-CssClass="btn btn-danger btn-xs" ItemStyle-Width="50px"/>
             </Columns>
 
