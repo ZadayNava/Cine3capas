@@ -84,7 +84,7 @@ namespace Cine3capas.Catalogos.Sala
                     msg = respuesta;
                     tipo = "success";
                     //sweet alert
-                    SweetAlert.Sweet_Alert(titulo, msg, tipo, this.Page, this.GetType(), "/Catalogos/Pelicula/ListadoPeliculas.aspx");
+                    SweetAlert.Sweet_Alert(titulo, msg, tipo, this.Page, this.GetType(), "/Catalogos/Sala/ListadoSala.aspx");
                 }
             }
             catch (Exception ex)

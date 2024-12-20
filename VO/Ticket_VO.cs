@@ -11,7 +11,6 @@ namespace VO
     {
 
         private int _Id_Ticket;
-        private float _Costo;
         private Pelicula_VO _Pelicula;
         private Hora_VO _Hora;
         private Sala_VO _Sala;
@@ -20,7 +19,6 @@ namespace VO
 
         public Ticket_VO(){
             _Id_Ticket = 0;
-            _Costo = 0;
             _sucursal = new Sucursal_VO();
             _Asiento = new Asiento_VO();
             _Pelicula = new Pelicula_VO();
@@ -31,7 +29,6 @@ namespace VO
         public Ticket_VO(DataRow dr)
         {
             _Id_Ticket = int.Parse(dr["Id_Ticket"].ToString());
-            _Costo = float.Parse(dr["Costo"].ToString());
 
             _sucursal = new Sucursal_VO
             {
@@ -65,7 +62,6 @@ namespace VO
         }
 
         public int Id_Ticket { get => _Id_Ticket; set => _Id_Ticket = value; }
-        public float Costo { get => _Costo; set => _Costo = value; }
         public Hora_VO Hora { get => _Hora; set => _Hora = value; }
         public Sala_VO Sala { get => _Sala; set => _Sala = value; }
         public Asiento_VO Asiento { get => _Asiento; set => _Asiento = value; }

@@ -15,6 +15,7 @@ namespace DAL
         {
             string salida = "";
             int respuesta = 0;
+            double costo = 0;
             try
             {
                 respuesta = Metodos_Datos.execute_nonQuery("SP_InsertarTicket",
@@ -22,7 +23,7 @@ namespace DAL
                                                "@Pelicula_id", ticket.Pelicula.Id_Pelicula,
                                                "@Horario_id", ticket.Hora.Id_Horario,
                                                "@Sala_id", ticket.Sala.Id_Sala,
-                                               "@costo", ticket.Costo
+                                               "@costo", costo
                                                         );
                 if (respuesta != 0)
                 {

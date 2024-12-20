@@ -34,7 +34,7 @@ namespace Cine3capas.Catalogos.Ticket
                     else
                     {
                         //sweet alert
-                        SweetAlert.Sweet_Alert("Ops...", "No pudimos encontrar el objeto que buscas", "info", this.Page, this.GetType(), "~/Catalogos/Pelicula/ListadoPeliculas.aspx");
+                        SweetAlert.Sweet_Alert("Ops...", "No pudimos encontrar el objeto que buscas", "info", this.Page, this.GetType(), "~/Catalogos/Ticket/ListadoTicket.aspx");
                     }
                 }
                 else
@@ -182,7 +182,7 @@ namespace Cine3capas.Catalogos.Ticket
                     msg = respuesta;
                     tipo = "success";
                     //sweet alert
-                    SweetAlert.Sweet_Alert(titulo, msg, tipo, this.Page, this.GetType(), "/Catalogos/Pelicula/ListadoPeliculas.aspx");
+                    SweetAlert.Sweet_Alert(titulo, msg, tipo, this.Page, this.GetType(), "/Catalogos/Ticket/ListadoTicket.aspx");
                 }
             }
             catch (Exception ex)

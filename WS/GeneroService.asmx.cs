@@ -34,6 +34,20 @@ namespace Cine3capas.WS
         }
 
         [WebMethod]
+        //ReadxID
+        public GeneroPelicula_VO GetGeneroxID(int id)
+        {
+            return Genero_BLL.GetGeneroxID(id);
+        }
+
+        [WebMethod]
+        //Update
+        public string UpdateGenero(GeneroPelicula_VO id)
+        {
+            return Genero_BLL.Update_Genero(id);
+        }
+
+        [WebMethod]
         //Delete
         public  string Delete_Genero(int id)
         {

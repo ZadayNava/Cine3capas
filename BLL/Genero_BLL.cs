@@ -22,6 +22,19 @@ namespace BLL
             return Genero_DAL.GetGenero(parametros);
         }
 
+
+        //ReadxID
+        public static GeneroPelicula_VO GetGeneroxID(int id)
+        {
+            return Genero_DAL.GetGeneroxID(id);
+        }
+
+        //Update
+        public static string Update_Genero(GeneroPelicula_VO id)
+        {
+            return Genero_DAL.Update_Genero(id);
+        }
+
         //Delete
         public static string Delete_Genero(int id)
         {

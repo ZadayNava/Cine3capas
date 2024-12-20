@@ -18,6 +18,7 @@
             <Columns>
                 <asp:BoundField DataField="Id_Genero" HeaderText="Numero de Genero" ItemStyle-Width="50px" ReadOnly="true" />
                 <asp:BoundField DataField="Nombre_Genero" HeaderText="Genero de peliculas" ItemStyle-Width="50px" />
+                    <asp:ButtonField ButtonType="Button" CommandName="Select" HeaderText="Modificar" Text="Editar" ControlStyle-CssClass="btn btn-primary btn-xs" ItemStyle-Width="50px" />
                 <asp:CommandField ButtonType="Button" HeaderText="Eliminar" ShowDeleteButton="true" ShowHeader="true" ControlStyle-CssClass="btn btn-danger btn-xs" ItemStyle-Width="50px" />
             </Columns>
         </asp:GridView>

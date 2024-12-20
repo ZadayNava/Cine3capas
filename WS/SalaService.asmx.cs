@@ -35,6 +35,20 @@ namespace Cine3capas.WS
         }
 
         [WebMethod]
+        //ReadxID
+        public Sala_VO GetSalaxID(int id)
+        {
+            return Sala_BLL.GetSalaxID(id);
+        }
+
+        [WebMethod]
+        //Update
+        public string UpdateSala(Sala_VO id)
+        {
+            return Sala_BLL.Update_Sala(id);
+        }
+
+        [WebMethod]
         //Create
         public string Insert_Sala(Sala_VO sala)
         {

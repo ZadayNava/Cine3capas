@@ -49,7 +49,7 @@ namespace Cine3capas.Catalogos.GeneroPelicula
                     msg = respuesta;
                     tipo = "success";
                     //sweet alert
-                    SweetAlert.Sweet_Alert(titulo, msg, tipo, this.Page, this.GetType(), "/Catalogos/Pelicula/ListadoPeliculas.aspx");
+                    SweetAlert.Sweet_Alert(titulo, msg, tipo, this.Page, this.GetType(), "/Catalogos/GeneroPelicula/ListadoGeneroPelicula.aspx");
                 }
             }
             catch (Exception ex)
