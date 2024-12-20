@@ -53,7 +53,7 @@ namespace VO
             _Hora = new Hora_VO { 
                 Id_Horario = int.Parse(dr["Id_Horario"].ToString()),
                 Fecha_Funcion = DateTime.Parse(dr["Fecha_Funcion"].ToString()).ToShortDateString(),
-                Horario_Funcion = DateTime.Parse(dr["Horario_Funcion"].ToString()).ToShortDateString()
+                Horario_Funcion = dr["Horario_Funcion"].ToString()
 
             };
 

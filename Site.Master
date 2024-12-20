@@ -54,6 +54,7 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/GeneroPelicula/ListadoGeneroPelicula.aspx">Genero Peliculas</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Ticket/ListadoTicket.aspx">Tickets</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Sala/ListadoSala.aspx">Sala</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/ReporteVentas/ListadoReporteVenta.aspx">Reporte Ventas</a></li>
                     </ul>
                 </div>
             </div>

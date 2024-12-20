@@ -49,6 +49,7 @@
     <Compile Include="Metodos_Datos.cs" />
     <Compile Include="Pelicula_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteVenta_DAL.cs" />
     <Compile Include="Sala_DAL.cs" />
     <Compile Include="Sucursal_DAL.cs" />
     <Compile Include="Ticket_DAL.cs" />

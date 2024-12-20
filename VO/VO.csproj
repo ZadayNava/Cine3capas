@@ -46,6 +46,7 @@
     <Compile Include="GeneroPelicula_VO.cs" />
     <Compile Include="Hora_VO.cs" />
     <Compile Include="Pelicula_VO.cs" />
+    <Compile Include="ReporteVenta_VO.cs" />
     <Compile Include="Sala_VO.cs" />
     <Compile Include="Sucursal_VO.cs" />
     <Compile Include="Ticket_VO.cs" />

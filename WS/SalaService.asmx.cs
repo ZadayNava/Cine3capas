@@ -22,21 +22,21 @@ namespace Cine3capas.WS
         [WebMethod]
 
         //Read
-        public static List<Sala_VO> GetSala(params object[] parametros)
+        public List<Sala_VO> GetSala(params object[] parametros)
         {
             return Sala_BLL.GetSala(parametros);
         }
 
         [WebMethod]
         //Delete
-        public static string Delete_Sala(int id)
+        public string Delete_Sala(int id)
         {
             return Sala_BLL.Delete_Sala(id);
         }
 
         [WebMethod]
         //Create
-        public static string Insert_Sala(Sala_VO sala)
+        public string Insert_Sala(Sala_VO sala)
         {
             return Sala_BLL.Insert_Sala(sala);
         }

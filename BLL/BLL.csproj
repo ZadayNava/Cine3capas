@@ -46,6 +46,7 @@
     <Compile Include="Genero_BLL.cs" />
     <Compile Include="Horario_BLL.cs" />
     <Compile Include="Pelicula_BLL.cs" />
+    <Compile Include="ReporteVenta_BLL.cs" />
     <Compile Include="Sala_BLL.cs" />
     <Compile Include="Sucursal_BLL.cs" />
     <Compile Include="Ticket_BLL.cs" />
